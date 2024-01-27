@@ -1,0 +1,60 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #6CD4FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 800px;
+}
+#main{
+    height: 320px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.box{
+    height:100px;
+    width: 100px;
+    background-color: #FE938C;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 45px;
+    margin: 3px;
+    align-items: center;
+}
+.box:hover,#new:hover{
+    transform:translateZ(5px);
+    box-shadow: 4px 4px 20px #e90e48;
+}
+.box:disabled{ /* when button will be disabled=true in JS */
+    color:black;
+    cursor: not-allowed; /* Change the cursor style */
+}
+#new{
+    height: 60px;
+    width: 150px;
+    background-color: #99c26d;
+    color: #2b2386;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: #D496A7;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 50px;
+    display: none ;
+    color:rgb(187, 26, 187)
+}
+span{
+    color: red;
+}
